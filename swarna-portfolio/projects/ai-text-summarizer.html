@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI-Based Text Summarizer — Swarna Bindhu Chelluri</title>
+<meta name="description" content="An NLP-powered application that generates concise summaries from lengthy documents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../sections.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="backdrop"><div class="backdrop-radial"></div><canvas id="particles"></canvas></div>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo"><span class="dot"></span>swarna.dev</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html#home">Home</a></li>
+    <li><a href="../index.html#projects">Projects</a></li>
+    <li><a href="../index.html#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+</nav>
+
+<main>
+  <section class="proj-hero">
+    <div class="wrap">
+      <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+      <div class="eyebrow">Project</div>
+      <h1 class="section-title">AI-Based Text Summarizer</h1>
+      <div class="proj-meta-bar">
+        <span class="status-tag tag-deployed">Deployed</span>
+        <span class="status-tag tag-active">NLP / Machine Learning</span>
+      </div>
+
+      <div class="proj-thumb-lg">
+        <svg viewBox="0 0 1000 420" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="gh1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1830"/><stop offset="100%" stop-color="#163a63"/></linearGradient></defs>
+          <rect width="1000" height="420" fill="url(#gh1)"/>
+          <g stroke="#4fb6ff" stroke-width="1" opacity="0.25">
+            <line x1="100" y1="100" x2="900" y2="100"/><line x1="100" y1="150" x2="700" y2="150"/>
+            <line x1="100" y1="200" x2="800" y2="200"/><line x1="100" y1="250" x2="600" y2="250"/>
+          </g>
+          <rect x="100" y="300" width="160" height="24" rx="4" fill="#5ef2c0" opacity="0.55"/>
+          <rect x="280" y="300" width="220" height="24" rx="4" fill="#4fb6ff" opacity="0.4"/>
+          <circle cx="800" cy="160" r="60" fill="none" stroke="#8fd6ff" stroke-width="1.5" opacity="0.45"/>
+          <circle cx="800" cy="160" r="36" fill="none" stroke="#5ef2c0" stroke-width="1.5" opacity="0.5"/>
+          <text x="100" y="370" fill="#9fb3d1" font-family="monospace" font-size="20">summarize(document) → key_insights</text>
+        </svg>
+      </div>
+
+      <div class="proj-detail-grid">
+        <div class="proj-section">
+          <h2>Overview</h2>
+          <p>The AI-Based Text Summarizer is an application that takes lengthy text documents and condenses them into short, meaningful summaries using Natural Language Processing techniques — helping readers absorb the core content of an article or document in seconds instead of minutes.</p>
+        </div>
+
+        <div class="proj-section">
+          <h2>Problem Statement</h2>
+          <p>Reading and extracting key information from long documents is time-consuming. Students, researchers, and professionals often need the gist of a document quickly without reading it end to end.</p>
+        </div>
+
+        <div class="proj-section">
+          <h2>Objectives</h2>
+          <ul>
+            <li>Build a tool that automatically condenses long text into a short, accurate summary.</li>
+            <li>Apply core NLP techniques for sentence scoring and extraction.</li>
+            <li>Provide a simple, accessible web interface for any user to paste text and get a summary.</li>
+          </ul>
+        </div>
+
+        <div class="proj-section">
+          <h2>Features</h2>
+          <ul>
+            <li>Accepts long-form text input and returns a condensed summary.</li>
+            <li>Uses NLP-based techniques to identify and retain the most important sentences.</li>
+            <li>Simple, lightweight web interface built with HTML, CSS, and JavaScript.</li>
+          </ul>
+        </div>
+
+        <div class="proj-section">
+          <h2>Technologies Used</h2>
+          <div class="proj-tech-row">
+            <span>Python</span><span>NLP</span><span>Machine Learning</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="proj-section">
+          <h2>Architecture / Workflow</h2>
+          <ul>
+            <li>User submits raw text through the web interface.</li>
+            <li>The backend processes the text using NLP techniques to score and rank sentences by importance.</li>
+            <li>The highest-ranked sentences are extracted and assembled into a final summary.</li>
+            <li>The summary is returned and displayed to the user in the interface.</li>
+          </ul>
+        </div>
+
+        <div class="proj-section">
+          <h2>My Contribution</h2>
+          <p>I designed and built the end-to-end application — implementing the NLP-based summarization logic in Python and building the front-end interface for submitting text and viewing results.</p>
+        </div>
+
+        <div class="proj-section">
+          <h2>Challenges Faced</h2>
+          <ul>
+            <li>Tuning the summarization logic to retain meaning while significantly shortening the text.</li>
+            <li>Handling varied input formats and document lengths reliably.</li>
+          </ul>
+        </div>
+
+        <div class="proj-section">
+          <h2>Learnings</h2>
+          <ul>
+            <li>Practical, hands-on experience applying NLP concepts to a real application.</li>
+            <li>Improved understanding of how to connect a Python backend to a usable front-end.</li>
+          </ul>
+        </div>
+
+        <div class="proj-section">
+          <h2>Outcomes</h2>
+          <p>A working summarization tool that reliably converts long documents into concise, readable summaries — and a deeper, applied understanding of NLP fundamentals.</p>
+        </div>
+      </div>
+
+      <div class="proj-cta">
+        <a href="https://github.com/swarnabindhu36/AI-Based-Text-Summarizer" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub</a>
+        <a href="../index.html#projects" class="btn btn-ghost">Back to Projects</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 Swarna Bindhu Chelluri</span>
+    <div class="footer-links">
+      <a href="https://github.com/swarnabindhu36" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/swarna-bindhu-chelluri-a96a38323" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:swarnabindhu36@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../main.js"></script>
+</body>
+</html>

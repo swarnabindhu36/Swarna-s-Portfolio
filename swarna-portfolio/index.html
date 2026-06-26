@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swarna Bindhu Chelluri — Aspiring Software Engineer</title>
+<meta name="description" content="Portfolio of Swarna Bindhu Chelluri, Computer Science Engineering student and aspiring software engineer specializing in AI, cloud and full-stack development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="sections.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- BOOT SEQUENCE -->
+<div id="boot" aria-hidden="true">
+  <div class="boot-console">
+    <div class="line"><span class="prompt">guest@portfolio:~$</span> whoami</div>
+    <div class="line">swarna_bindhu_chelluri</div>
+    <div class="line"><span class="prompt">guest@portfolio:~$</span> load --modules skills,projects,internships</div>
+    <div class="line">[OK] modules loaded</div>
+    <div class="line"><span class="prompt">guest@portfolio:~$</span> ./render_portfolio<span class="cursor-blink"></span></div>
+  </div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<div class="backdrop">
+  <div class="backdrop-radial"></div>
+  <canvas id="particles"></canvas>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#home" class="nav-logo"><span class="dot"></span>swarna.dev</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#strengths">Strengths</a></li>
+    <li><a href="#internships">Internships</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+</nav>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-kicker"><span class="dot"></span><span class="mono">SYSTEM STATUS: AVAILABLE FOR OPPORTUNITIES</span></div>
+        <h1 class="hero-name">Swarna Bindhu<br>Chelluri</h1>
+        <div class="hero-type"><span id="typeText"></span><span class="type-caret">&nbsp;</span></div>
+        <p class="hero-desc">Computer Science Engineering student building intelligent, real-world software — from NLP-driven tools to enterprise audit systems — and learning the cloud infrastructure that ships them.</p>
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/Swarna_Bindhu_Chelluri_Resume.docx" download class="btn btn-ghost">Download Resume</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="hero-stat-num">6+</div><div class="hero-stat-label">Internships</div></div>
+          <div><div class="hero-stat-num">4</div><div class="hero-stat-label">Projects Shipped</div></div>
+          <div><div class="hero-stat-num">2027</div><div class="hero-stat-label">Graduating</div></div>
+        </div>
+      </div>
+      <div class="hero-portrait-wrap">
+        <img src="assets\Profile.png" alt="Portrait of Swarna Bindhu Chelluri">
+        <div class="hero-portrait-frame"></div>
+        <div class="hero-portrait-tag mono">[ swarna_bindhu.profile ]</div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>SCROLL</span><span class="line-track"></span></div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section-pad">
+    <div class="wrap about-grid">
+      <div class="about-photo reveal">
+        <img src="assets\Profile.png" alt="Swarna Bindhu Chelluri">
+      </div>
+      <div class="about-text">
+        <div class="eyebrow reveal">About</div>
+        <h2 class="section-title reveal">Who I am</h2>
+        <p class="reveal">Hi, I'm Swarna Bindhu Chelluri, a Computer Science Engineering student at Srinivasa Institute of Engineering and Technology, Amalapuram. I'm passionate about software engineering, artificial intelligence, and building technology that solves real problems.</p>
+        <p class="reveal">I enjoy learning new technologies, building practical projects, and continuously sharpening my technical and problem-solving skills. My goal is to become a software engineer capable of designing efficient, scalable, and impactful systems.</p>
+        <div class="chip-row reveal">
+          <span class="chip">B.Tech Computer Science Engineering</span>
+          <span class="chip">Class of 2027</span>
+          <span class="chip">Aspiring Software Developer</span>
+          <span class="chip">Fast Learner</span>
+          <span class="chip">Team Player</span>
+        </div>
+        <div class="score-row reveal">
+          <div class="score-card glass">
+            <div class="score-num">93.8%</div>
+            <div class="score-label">Intermediate (MPC)</div>
+          </div>
+          <div class="score-card glass">
+            <div class="score-num">98%</div>
+            <div class="score-label">SSC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section-pad">
+    <div class="wrap">
+      <div class="eyebrow reveal">Skills</div>
+      <h2 class="section-title reveal">What I work with</h2>
+      <p class="section-sub reveal">Languages, frameworks, and tools I use to design, build, and ship software.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card glass glass-hover reveal">
+          <div class="skill-card-head">
+            <div class="skill-card-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="skill-card-title">Programming Languages</div>
+          </div>
+          <ul class="skill-list"><li>Python</li><li>JavaScript</li><li>C</li></ul>
+        </div>
+
+        <div class="skill-card glass glass-hover reveal reveal-delay-1">
+          <div class="skill-card-head">
+            <div class="skill-card-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="skill-card-title">Web Technologies</div>
+          </div>
+          <ul class="skill-list"><li>HTML5</li><li>CSS3</li><li>React.js</li></ul>
+        </div>
+
+        <div class="skill-card glass glass-hover reveal reveal-delay-2">
+          <div class="skill-card-head">
+            <div class="skill-card-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <div class="skill-card-title">AI &amp; Machine Learning</div>
+          </div>
+          <ul class="skill-list"><li>Machine Learning Fundamentals</li><li>Generative AI</li></ul>
+        </div>
+
+        <div class="skill-card glass glass-hover reveal">
+          <div class="skill-card-head">
+            <div class="skill-card-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4Z"/></svg>
+            </div>
+            <div class="skill-card-title">Software Engineering</div>
+          </div>
+          <ul class="skill-list"><li>Project planning & Management</li><li>Problem Solving</li><li>SDLC</li></ul>
+        </div>
+
+        <div class="skill-card glass glass-hover reveal reveal-delay-1">
+          <div class="skill-card-head">
+            <div class="skill-card-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <div class="skill-card-title">Tools</div>
+          </div>
+          <ul class="skill-list"><li>Git</li><li>GitHub</li><li>VS Code</li></ul>
+        </div>
+
+        <div class="skill-card glass glass-hover reveal reveal-delay-2">
+          <div class="skill-card-head">
+            <div class="skill-card-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <div class="skill-card-title">Cloud Fundamentals</div>
+          </div>
+          <ul class="skill-list"><li>AWS Cloud Fundamentals</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STRENGTHS ============ -->
+  <section id="strengths" class="section-pad">
+    <div class="wrap">
+      <div class="eyebrow reveal">Strengths</div>
+      <h2 class="section-title reveal">How I work</h2>
+      <p class="section-sub reveal">The technical, professional, and personal traits I bring to every team and project.</p>
+
+      <div class="strengths-grid">
+        <div class="strength-card glass glass-hover reveal">
+          <div class="eyebrow" style="margin-bottom:18px">Technical</div>
+          <ul class="strength-list">
+            <li>Problem solving</li>
+            <li>Analytical thinking</li>
+            <li>Quick learning ability</li>
+            <li>Adaptability to new technologies</li>
+          </ul>
+        </div>
+        <div class="strength-card glass glass-hover reveal reveal-delay-1">
+          <div class="eyebrow" style="margin-bottom:18px">Professional</div>
+          <ul class="strength-list">
+            <li>Team collaboration</li>
+            <li>Communication skills</li>
+            <li>Time management</li>
+            <li>Continuous learning mindset</li>
+          </ul>
+        </div>
+        <div class="strength-card glass glass-hover reveal reveal-delay-2">
+          <div class="eyebrow" style="margin-bottom:18px">Personal</div>
+          <ul class="strength-list">
+            <li>Self-motivated</li>
+            <li>Detail-oriented</li>
+            <li>Positive attitude</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERNSHIPS ============ -->
+  <section id="internships" class="section-pad">
+    <div class="wrap">
+      <div class="eyebrow reveal">Experience</div>
+      <h2 class="section-title reveal">Internships</h2>
+      <p class="section-sub reveal">Hands-on exposure across cloud, full-stack development, AI/ML, and enterprise software.</p>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-head">
+              <div>
+                <div class="timeline-role">Full Stack Development &amp; Web Technologies Intern</div>
+                <div class="timeline-org">Visakhapatnam Steel Plant (RINL)</div>
+              </div>
+              <div class="timeline-duration mono">May 18 – Jun 13, 2026</div>
+            </div>
+            <p class="timeline-project">Developed and contributed to the <strong>Audit Information Management System (AIMS)</strong>, a web-based application streamlining audit workflows, document management, report handling, and information accessibility.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Software Development</span>
+              <span class="timeline-tag">Enterprise Applications</span>
+              <span class="timeline-tag">Team Collaboration</span>
+              <span class="timeline-tag">Real-world Industry Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-head">
+              <div>
+                <div class="timeline-role">AWS AI-Powered Cloud Engineer Virtual Internship</div>
+                <div class="timeline-org">AICTE – EduSkills</div>
+              </div>
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">AWS Cloud Services</span>
+              <span class="timeline-tag">Cloud Operations</span>
+              <span class="timeline-tag">Cloud Security Fundamentals</span>
+              <span class="timeline-tag">AI &amp; Cloud Concepts</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-head">
+              <div>
+                <div class="timeline-role">Python Full Stack Development Virtual Internship</div>
+                <div class="timeline-org">AICTE – EduSkills</div>
+              </div>
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Full Stack Development</span>
+              <span class="timeline-tag">Modern Web Apps</span>
+              <span class="timeline-tag">Software Development Practices</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-head">
+              <div>
+                <div class="timeline-role">Python Development Intern</div>
+                <div class="timeline-org">Brainwave Matrix Solutions</div>
+              </div>
+            </div>
+            <p class="timeline-project">Built an <strong>ATM Interface System</strong> and an <strong>Inventory Management System</strong> applying core OOP principles.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Python</span>
+              <span class="timeline-tag">OOP Concepts</span>
+              <span class="timeline-tag">Software Development</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-head">
+              <div>
+                <div class="timeline-role">Python Programming Intern</div>
+                <div class="timeline-org">ShadowFox</div>
+              </div>
+            </div>
+            <p class="timeline-project">Built a web scraper for efficient data extraction and a Hangman word-guessing game applying Python logic and conditionals.</p>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Web Scraping</span>
+              <span class="timeline-tag">Automation Scripts</span>
+              <span class="timeline-tag">Data Processing</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-head">
+              <div>
+                <div class="timeline-role">Android Developer Virtual Internship</div>
+                <div class="timeline-org">AICTE | EduSkills | Google</div>
+              </div>
+            </div>
+            <div class="timeline-tags">
+              <span class="timeline-tag">Android Fundamentals</span>
+              <span class="timeline-tag">Mobile UI Design</span>
+              <span class="timeline-tag">Mobile App Concepts</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section-pad">
+    <div class="wrap">
+      <div class="eyebrow reveal">Projects</div>
+      <h2 class="section-title reveal">Things I've built</h2>
+      <p class="section-sub reveal">From AI-powered tools to enterprise systems — projects that reflect how I think and build.</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card glass glass-hover reveal">
+          <div class="project-thumb">
+            <span class="status-tag tag-deployed">Deployed</span>
+            <svg viewBox="0 0 400 190" xmlns="assets\Text Summarizer home.png">
+              <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1830"/><stop offset="100%" stop-color="#163a63"/></linearGradient></defs>
+              <rect width="400" height="190" fill="url(#g1)"/>
+              <g stroke="#4fb6ff" stroke-width="1" opacity="0.3">
+                <line x1="40" y1="40" x2="360" y2="40"/><line x1="40" y1="70" x2="280" y2="70"/><line x1="40" y1="100" x2="320" y2="100"/>
+              </g>
+              <rect x="40" y="120" width="60" height="10" rx="2" fill="#5ef2c0" opacity="0.6"/>
+              <rect x="110" y="120" width="90" height="10" rx="2" fill="#4fb6ff" opacity="0.5"/>
+              <circle cx="340" cy="60" r="28" fill="none" stroke="#8fd6ff" stroke-width="1.5" opacity="0.5"/>
+              <text x="40" y="170" fill="#9fb3d1" font-family="monospace" font-size="13">summarize(document) → insight</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-title">AI-Based Text Summarizer</div>
+            <p class="project-desc">An AI-powered application that generates concise, meaningful summaries from lengthy documents using Natural Language Processing techniques.</p>
+            <div class="project-tech"><span>Python</span><span>NLP</span><span>Machine Learning</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-actions">
+              <a href="projects/ai-text-summarizer.html" class="btn btn-ghost">View Details</a>
+              <a href="https://github.com/swarnabindhu36/AI-Based-Text-Summarizer" target="_blank" rel="noopener" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass glass-hover reveal reveal-delay-1">
+          <div class="project-thumb">
+            <span class="status-tag tag-active">Active</span>
+            <svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1830"/><stop offset="100%" stop-color="#11402f"/></linearGradient></defs>
+              <rect width="400" height="190" fill="url(#g2)"/>
+              <circle cx="100" cy="95" r="34" fill="none" stroke="#5ef2c0" stroke-width="1.5" opacity="0.6"/>
+              <path d="M75 95 q25 -30 50 0 q25 30 50 0" stroke="#4fb6ff" stroke-width="1.5" fill="none" opacity="0.5"/>
+              <rect x="220" y="60" width="140" height="14" rx="7" fill="#5ef2c0" opacity="0.3"/>
+              <rect x="220" y="85" width="100" height="14" rx="7" fill="#4fb6ff" opacity="0.3"/>
+              <rect x="220" y="110" width="120" height="14" rx="7" fill="#5ef2c0" opacity="0.2"/>
+              <text x="40" y="170" fill="#9fb3d1" font-family="monospace" font-size="13">chat.ask("how do solar panels work?")</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Renewable Energy Awareness Chatbot</div>
+            <p class="project-desc">An intelligent chatbot built to educate users about renewable energy, sustainability, and environmental awareness through interactive conversation.</p>
+            <div class="project-tech"><span>Python</span><span>Chatbot Logic</span><span>Sustainability</span></div>
+            <div class="project-actions">
+              <a href="projects/renewable-energy-chatbot.html" class="btn btn-ghost">View Details</a>
+              <a href="https://github.com/swarnabindhu36" target="_blank" rel="noopener" class="btn btn-ghost">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass glass-hover reveal reveal-delay-2">
+          <div class="project-thumb">
+            <span class="status-tag tag-deployed">Deployed</span>
+            <svg viewBox="0 0 400 190" xmlns="assets\AIMS 1.jpeg">
+              <defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1830"/><stop offset="100%" stop-color="#1b2d57"/></linearGradient></defs>
+              <rect width="400" height="190" fill="url(#g3)"/>
+              <rect x="50" y="40" width="300" height="20" rx="4" fill="none" stroke="#4fb6ff" stroke-width="1.2" opacity="0.5"/>
+              <rect x="50" y="70" width="300" height="20" rx="4" fill="none" stroke="#4fb6ff" stroke-width="1.2" opacity="0.4"/>
+              <rect x="50" y="100" width="300" height="20" rx="4" fill="none" stroke="#5ef2c0" stroke-width="1.2" opacity="0.5"/>
+              <rect x="50" y="130" width="180" height="20" rx="4" fill="none" stroke="#4fb6ff" stroke-width="1.2" opacity="0.3"/>
+              <text x="40" y="172" fill="#9fb3d1" font-family="monospace" font-size="13">audit_log.status = "verified"</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Audit Information Management System</div>
+            <p class="project-desc">A web-based audit management application developed during my internship at Visakhapatnam Steel Plant (RINL), streamlining workflows and reporting.</p>
+            <div class="project-tech"><span>Web Development</span><span>System Design</span><span>Enterprise Software</span></div>
+            <div class="project-actions">
+              <a href="projects/aims.html" class="btn btn-ghost">View Details</a>
+              <a href="https://github.com/swarnabindhu36/Audit-Information-Management-System-AIMS-" target="_blank" rel="noopener" class="btn btn-primary">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card glass glass-hover reveal reveal-delay-3">
+          <div class="project-thumb">
+            <span class="status-tag tag-learning">Hackathon</span>
+            <svg viewBox="0 0 400 190" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="g4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0d1830"/><stop offset="100%" stop-color="#3a2a1a"/></linearGradient></defs>
+              <rect width="400" height="190" fill="url(#g4)"/>
+              <rect x="60" y="50" width="50" height="70" rx="6" fill="none" stroke="#ff8a5b" stroke-width="1.4" opacity="0.6"/>
+              <circle cx="85" cy="75" r="9" fill="none" stroke="#ff8a5b" stroke-width="1.4" opacity="0.6"/>
+              <line x1="150" y1="80" x2="340" y2="80" stroke="#4fb6ff" stroke-width="1.4" opacity="0.5"/>
+              <circle cx="150" cy="80" r="4" fill="#4fb6ff"/><circle cx="250" cy="80" r="4" fill="#4fb6ff"/><circle cx="340" cy="80" r="4" fill="#5ef2c0"/>
+              <text x="40" y="172" fill="#9fb3d1" font-family="monospace" font-size="13">verify(aadhaar) → issue_ticket()</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-title">Aadhaar-Enabled Automated Bus Transportation System</div>
+            <p class="project-desc">A Smart India Hackathon 2024 project integrating Aadhaar-based passenger authentication, digital ticketing, and automated travel management.</p>
+            <div class="project-tech"><span>Aadhaar Authentication</span><span>Digital Ticketing</span><span>Smart Systems</span></div>
+            <div class="project-actions">
+              <a href="projects/aadhaar-bus-system.html" class="btn btn-ghost" style="flex:1 1 100%">View Details</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section-pad">
+    <div class="wrap">
+      <div class="eyebrow reveal">Education</div>
+      <h2 class="section-title reveal">Academic timeline</h2>
+
+      <div class="edu-timeline reveal">
+        <div class="edu-item">
+          <div class="edu-years mono">2023 – 2027</div>
+          <div>
+            <div class="edu-degree">B.Tech, Computer Science Engineering</div>
+            <div class="edu-school">Srinivasa Institute of Engineering and Technology, Amalapuram</div>
+            <span class="edu-score">In Progress</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-years mono">2021 – 2023</div>
+          <div>
+            <div class="edu-degree">Intermediate (MPC)</div>
+            <div class="edu-school">Aditya Junior College</div>
+            <span class="edu-score">93.8%</span>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-years mono">2020 – 2021</div>
+          <div>
+            <div class="edu-degree">SSC</div>
+            <div class="edu-school">Sri Balaji High School</div>
+            <span class="edu-score">98%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTIFICATIONS & ACHIEVEMENTS ============ -->
+  <section id="certifications" class="section-pad">
+    <div class="wrap">
+      <div class="eyebrow reveal">Certifications &amp; Achievements</div>
+      <h2 class="section-title reveal">Verified learning, real recognition</h2>
+
+      <div class="cert-grid">
+        <ul class="cert-list reveal">
+          <li><span class="cert-icon mono">✓</span>AWS Educate — Getting Started with Compute Badge</li>
+          <li><span class="cert-icon mono">✓</span>AWS AI-Powered Cloud Engineer Internship Certificate</li>
+          <li><span class="cert-icon mono">✓</span>Python Full Stack Development Internship Certificate</li>
+          <li><span class="cert-icon mono">✓</span>Android Developer Virtual Internship Certificate (Google × EduSkills)</li>
+          <li><span class="cert-icon mono">✓</span>Python Internship Certificates — Brainwave Matrix Solutions &amp; ShadowFox</li>
+        </ul>
+
+        <div class="achievement-card glass reveal reveal-delay-1">
+          <h4 class="mono">Smart India Hackathon 2024 — Participant</h4>
+          <ul>
+            <li>Competed in India's largest innovation competition.</li>
+            <li>Built the Aadhaar-Enabled Automated Bus Transportation System.</li>
+            <li>Strengthened teamwork, innovation, and technical problem-solving.</li>
+          </ul>
+          <h4 class="mono" style="margin-top:22px">Academic Excellence</h4>
+          <ul>
+            <li>SSC: 98%</li>
+            <li>Intermediate: 93.8%</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section-pad">
+    <div class="wrap">
+      <div class="eyebrow reveal">Contact</div>
+      <h2 class="section-title reveal">Let's build something</h2>
+      <p class="section-sub reveal">Open to internships, entry-level software engineering roles, and collaborative projects. I usually reply within a day.</p>
+
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-info">
+            <a class="contact-link-card glass glass-hover" href="mailto:swarnabindhu36@gmail.com">
+              <span class="contact-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+              <span><span class="contact-link-label mono">EMAIL</span><br><span class="contact-link-value">swarnabindhu36@gmail.com</span></span>
+            </a>
+            <a class="contact-link-card glass glass-hover" href="https://www.linkedin.com/in/swarna-bindhu-chelluri-a96a38323" target="_blank" rel="noopener">
+              <span class="contact-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
+              <span><span class="contact-link-label mono">LINKEDIN</span><br><span class="contact-link-value">swarna-bindhu-chelluri</span></span>
+            </a>
+            <a class="contact-link-card glass glass-hover" href="https://github.com/swarnabindhu36" target="_blank" rel="noopener">
+              <span class="contact-link-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></span>
+              <span><span class="contact-link-label mono">GITHUB</span><br><span class="contact-link-value">github.com/swarnabindhu36</span></span>
+            </a>
+          </div>
+          <div class="contact-cta-row">
+            <a href="mailto:swarnabindhu36@gmail.com?subject=Hiring%20Opportunity" class="btn btn-primary">Hire Me</a>
+            <a href="assets/Swarna_Bindhu_Chelluri_Resume.docx" download class="btn btn-ghost">Download Resume</a>
+            <a href="https://www.linkedin.com/in/swarna-bindhu-chelluri-a96a38323" target="_blank" rel="noopener" class="btn btn-ghost">Let's Connect</a>
+          </div>
+        </div>
+
+        <form class="contact-form glass reveal reveal-delay-1" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <div class="form-row" id="rowName">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="name" placeholder="Your full name" autocomplete="name">
+            <div class="form-error"></div>
+          </div>
+          <div class="form-row" id="rowEmail">
+            <label for="femail">Email</label>
+            <input type="email" id="femail" name="email" placeholder="you@email.com" autocomplete="email">
+            <div class="form-error"></div>
+          </div>
+          <div class="form-row" id="rowSubject">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" placeholder="What's this about?">
+            <div class="form-error"></div>
+          </div>
+          <div class="form-row" id="rowMessage">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" name="message" placeholder="Tell me a bit about the opportunity or project..."></textarea>
+            <div class="form-error"></div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; margin-top:6px;">Send Message</button>
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 Swarna Bindhu Chelluri</span>
+    <span>Built with passion, innovation, and code.</span>
+    <div class="footer-links">
+      <a href="https://github.com/swarnabindhu36" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/swarna-bindhu-chelluri-a96a38323" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:swarnabindhu36@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
